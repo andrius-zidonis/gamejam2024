@@ -1,0 +1,4 @@
+class_name MapSettings
+
+int width = 128
+int height = 128
