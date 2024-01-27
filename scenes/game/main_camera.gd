@@ -11,4 +11,4 @@ func _ready():
 func _process(delta):
 	self.global_position = (object1.global_position + object2.global_position) * 0.5
 	
-	self.zoom = Vector2(0.5, 0.5)
+	self.zoom = Vector2(0.75, 0.75)
