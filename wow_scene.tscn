@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://db3g80mp8gn7q"]
+[gd_scene load_steps=12 format=3 uid="uid://db3g80mp8gn7q"]
 
 [ext_resource type="Texture2D" uid="uid://cgtew4hksfera" path="res://Slates [32x32px orthogonal tileset by Ivan Voirol].png" id="1_f80an"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_gcgn6"]
 [ext_resource type="Texture2D" uid="uid://cbmmsmxcur0pa" path="res://icon.svg" id="2_gs8yt"]
+[ext_resource type="Resource" uid="uid://dinsupfu5sjh7" path="res://inventory/playerInventory0.tres" id="3_53yxu"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="4_qqvp4"]
+[ext_resource type="PackedScene" uid="uid://bagkfjh4t10ts" path="res://inventory/Inv_UI.tscn" id="6_o1sq3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwbeb"]
 texture = ExtResource("1_f80an")
@@ -4020,6 +4022,7 @@ layer_0/tile_data = PackedInt32Array(-13, 65536, 2, 65523, 65536, 2, 131059, 655
 
 [node name="CharacterBody2D_1" type="CharacterBody2D" parent="."]
 script = ExtResource("1_gcgn6")
+inventory = ExtResource("3_53yxu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D_1"]
 position = Vector2(-510, -16)
@@ -4048,6 +4051,9 @@ texture = ExtResource("2_gs8yt")
 script = ExtResource("4_qqvp4")
 object1 = NodePath("../CharacterBody2D_1")
 object2 = NodePath("../CharacterBody2D_2")
+
+[node name="Inv_UI" parent="Camera2D" instance=ExtResource("6_o1sq3")]
+scale = Vector2(5, 5)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Camera2D"]
 
