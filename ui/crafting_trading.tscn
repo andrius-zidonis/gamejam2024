@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://rphaqkdbo288"]
 
 [ext_resource type="Script" path="res://ui/crafting_trading.gd" id="1_k4tec"]
-[ext_resource type="PackedScene" path="res://ui/inventory/inventory_ui.tscn" id="2_cesjl"]
+[ext_resource type="PackedScene" uid="uid://bagkfjh4t10ts" path="res://ui/inventory/inventory_ui.tscn" id="2_cesjl"]
 
 [node name="Crafting_Trading" type="Control"]
 layout_mode = 3
