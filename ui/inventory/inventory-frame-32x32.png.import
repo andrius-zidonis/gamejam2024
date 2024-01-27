@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgtew4hksfera"
-path="res://.godot/imported/Slates [32x32px orthogonal tileset by Ivan Voirol].png-d7805a528dc9d487582556fc184d5d34.ctex"
+uid="uid://dxkvw2vvy4f2v"
+path="res://.godot/imported/inventory-frame-32x32.png-b7d93ab859234a556c3c8c0af802767a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Slates [32x32px orthogonal tileset by Ivan Voirol].png"
-dest_files=["res://.godot/imported/Slates [32x32px orthogonal tileset by Ivan Voirol].png-d7805a528dc9d487582556fc184d5d34.ctex"]
+source_file="res://ui/inventory/inventory-frame-32x32.png"
+dest_files=["res://.godot/imported/inventory-frame-32x32.png-b7d93ab859234a556c3c8c0af802767a.ctex"]
 
 [params]
 
