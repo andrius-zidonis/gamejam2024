@@ -1,10 +1,12 @@
 extends Control
 
-@onready var item_visuals: Sprite2D = $CenterContainer/Panel/ItemDisplay
+class_name InventorySlot
 
-func update(item: InventoryItem):
-	if !item:
+@export var item_visuals: Sprite2D
+
+func update_visual(texture: Texture2D):
+	if !texture:
 		item_visuals.visible = false
 	else:
 		item_visuals.visible = true
-		item_visuals.texture = item.texture
+		item_visuals.texture = texture

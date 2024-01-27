@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://ui/inventory/inventory_ui_slot.gd" id="1_eycef"]
 [ext_resource type="Texture2D" uid="uid://dxkvw2vvy4f2v" path="res://ui/inventory/inventory-frame-32x32.png" id="2_1g7xw"]
 
-[node name="Inv_UI_slot" type="Control"]
+[node name="Inv_UI_slot" type="Control" node_paths=PackedStringArray("item_visuals")]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 3
@@ -15,6 +15,7 @@ offset_bottom = -616.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eycef")
+item_visuals = NodePath("CenterContainer/Panel/ItemDisplay")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_1g7xw")
