@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @export var speed = 400
 @export var player: int
-
 @export var inventory: Inv
 
 func get_input():
