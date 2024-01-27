@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://4dix6wx1hcmj"]
 
-[ext_resource type="Script" path="res://ui/inventory/inv_ui_slot.gd" id="1_62g7l"]
-[ext_resource type="Texture2D" uid="uid://dxkvw2vvy4f2v" path="res://ui/inventory/inventory-frame-32x32.png" id="1_uqe2k"]
+[ext_resource type="Script" path="res://ui/inventory/inventory_ui_slot.gd" id="1_eycef"]
+[ext_resource type="Texture2D" uid="uid://dxkvw2vvy4f2v" path="res://ui/inventory/inventory-frame-32x32.png" id="2_1g7xw"]
 
 [node name="Inv_UI_slot" type="Control"]
 self_modulate = Color(1, 1, 1, 0)
@@ -14,10 +14,10 @@ offset_right = -1120.0
 offset_bottom = -616.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_62g7l")
+script = ExtResource("1_eycef")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_uqe2k")
+texture = ExtResource("2_1g7xw")
 centered = false
 
 [node name="CenterContainer" type="CenterContainer" parent="."]

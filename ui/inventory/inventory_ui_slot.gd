@@ -2,7 +2,7 @@ extends Control
 
 @onready var item_visuals: Sprite2D = $CenterContainer/Panel/ItemDisplay
 
-func update(item: InvItem):
+func update(item: InventoryItem):
 	if !item:
 		item_visuals.visible = false
 	else:
