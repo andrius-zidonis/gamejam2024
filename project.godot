@@ -17,7 +17,7 @@ config/icon="res://prefabs/entities/players/godot.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/procedural_world_map/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 
