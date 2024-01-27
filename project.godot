@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="coop-survival"
-run/main_scene="res://wow_scene.tscn"
+run/main_scene="res://scenes/game/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://prefabs/entities/players/godot.svg"
 
 [editor_plugins]
 
